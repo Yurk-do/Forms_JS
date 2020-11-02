@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Basic Document</title>
+
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="../src/styles/style.css" />
+</head>
+
+<html>
+
+<body>
+  <div id="title">
+    <h1>FORMS</h1>
+  </div>
+  <form method="POST" id="authorization">
+    <h2>authorization</h2>
+    <div id="form-conteiner">
+        <div id="form-personal">
+            <div id="passport-data">
+                <h3>Personal Data</h3>
+                    <div id="passport-data-box">
+                        <div class="passport-data-item">
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" required placeholder="Введите Ваше имя">
+                            <br>
+                            <label for="middlename">Middle Name</label>
+                            <input type="text" id="middlename" required placeholder="Введите Ваше отчество">
+                            <br>
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" required placeholder="Введите Вашу фамилию">
+                            <br>
+                        </div>
+                        <div class="passport-data-item">
+                            <ul id="sex">
+                                <li>
+                                <input type="radio" id="male" name="sex" value="male">
+                                <label for="male">Male</label>
+                                </li>
+                                <li>
+                                <input type="radio" id="female" name="sex" value="female">
+                                <label for="female">Female</label>
+                                </li>
+                            </ul>
+                            <ul id="status">
+                                <li>
+                                <input type="radio" id="married" name="status" value="married">
+                                <label for="married">Married</label>
+                                </li>
+                                <li>
+                                <input type="radio" id="single" name="status" value="single">
+                                <label for="single">Single</label>
+                                </li>
+                                <li>
+                                <input type="radio" id="divorced" name="status" value="single">
+                                <label for="divorced">Divorsed</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            <div id="address">
+                <h3>Address</h3>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="Belerus">Belarus</option>
+                    <option value="Russia">Russia</option>
+                    <option value="USA">USA</option>
+                    <option value="England">England</option>
+                    <option value="other country">other country</option>
+                </select>
+                <br>
+                <label for="city">City:</label>
+                <select name="city" id="city">
+                    <option value="Minsk">Minsk</option>
+                    <option value="Moskow">Moskow</option>
+                    <option value="Washigton">Washigton</option>
+                    <option value="London">London</option>
+                    <option value="other city">other city</option>
+                </select>
+                <br>
+                <div id="street-house-flat">
+                    <label for="street">Street:</label>
+                    <input type="text" id="street" name="street" required placeholder="Введите Вашу улицу">
+                    <label for="house">House №:</label>
+                    <input type="number" id="housenumber" required>
+                    <label for="flat">Flat №:</label>
+                    <input type="number" id="flatnumber">
+                </div>
+                    <label for="phone">Phone №:</label>
+                    <input type="text" id="phonenumber" required placeholder="+37295872321">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Введите Ваш email">
+            </div>
+        </div>
+
+        <div id="form-questions">
+        <div id="lang-form">
+          <h3>What languages do you speak</h3>
+          <div class="form-questions-box">
+            <input type="checkbox" id="english" name="language">
+            <label for="english">English</label>
+            <br>
+            <input type="checkbox" id="russian" name="language">
+            <label for="russian">Russian</label>
+            <br>
+            <input type="checkbox" id="belarussian" name="language">
+            <label for="belarussian">Belarussian</label>
+            <br>
+            <input type="checkbox" id="spaish" name="language">
+            <label for="spanish">Spanish</label>
+            <br>
+            <input type="checkbox" id="chinese" name="language">
+            <label for="chinese">Chinese</label>
+            <br>
+            <input type="checkbox" id="italian" name="language">
+            <label for="italian">Italian</label>
+            <br>
+            <input type="checkbox" id="german" name="language">
+            <label for="german">German</label>
+            <br>
+            <input type="checkbox" id="french" name="language">
+            <label for="french">French</label>
+          </div>
+        </div>
+       </div>
+    </div>
+    <fieldset form="autorization" id="comments">
+      <legend>Your comments</legend>
+      <textarea name="comments" id="comments" cols="100" rows="20"></textarea>
+      <div>
+        <button id="button" type="button">Send</button>
+      </div>
+    </fieldset>
+    <div id="footer">
+    </div>
+    <script src="../src/main.js">
+    </script>
+</body>
+
+</html>

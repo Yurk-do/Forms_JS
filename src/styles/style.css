@@ -1,0 +1,187 @@
+/* Geometry */
+
+body {
+    position: relative;
+    margin: 0em 3em;
+}
+
+#title {
+    position: absolute;
+    left: 0;
+    top: 1.5em;
+    height: 6em;
+    width: 100%;
+}
+
+#title h1 {
+    line-height: 2.5em;
+    margin: 0em;
+    padding: 0em 0.5em;
+}
+
+h2 {
+    margin: 0;
+    padding: 0.1em 0.6em;
+}
+
+h1 {
+    text-align: center;
+}
+
+#title a {
+    text-decoration: none;
+    color:inherit;
+}
+
+#footer {
+    height: 50px;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+/* Colors ******************/
+
+html {
+    background-color:white;
+}
+
+#title {
+    background-color: grey
+}
+
+/* Fonts *******************/
+
+body {
+    font: small Tahoma, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 250%;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 130%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Forms-fonts*/
+
+form {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+form > h2 {
+    font-size: 1em;
+}
+
+
+/* Forms-geometry */
+label {
+    display: inline-block;
+    width: 7em;
+    padding-bottom: 1em;
+}
+
+form {
+    padding-top: 6em;
+}
+form > h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+
+#form-conteiner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#form-personal {
+    width: 49%;
+    display: flex;
+    flex-flow: row wrap;
+}
+#passport-data, #address {
+    width: 100%;
+}
+
+#passport-data-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: top;
+}
+
+.passport-data-item:last-child {
+    padding-left: 2em;
+}
+#status {
+    margin-top: 2em;
+}
+
+#street-house-flat>input:not([type="text"]) {
+width: 2em;
+padding-left: 1em;
+}
+
+#form-questions {
+    width: 49%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-left: 2em;
+}
+#hobb-form, #lang-form {
+    width: 50%;
+    
+}
+.form-questions-box {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#comments{
+    text-align: center;
+}
+#comments>legend {
+    margin-left: auto;
+    margin-right: auto;
+}
+fieldset {
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
